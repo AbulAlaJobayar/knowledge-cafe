@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Mr. Raju",
+        "title": "How to get your first job as a self-taught programmer",
+        "img": "https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?w=996&t=st=1680245982~exp=1680246582~hmac=345940bdbfe954282bb7f4f986bfdb0b7a5bda962be0e0abf75987d38e3314ca",
+        "authorImg":"https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "date":"Mar 14 (4 Days ago)",
+        "readTime":5
+      },
+      {
+        "id": 2,
+        "name": "Mrs. Setara",
+        "title": "How to get your first job as a self-taught programmer",
+        "img": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "authorImg":"https://images.unsplash.com/photo-1591084728795-1149f32d9866?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
+        "date":"Mar 14 (4 Days ago)",
+        "readTime":10
+      },
+      {
+        "id": 3,
+        "name": "Mina Mostofa",
+        "title": "How to get your first job as a self-taught programmer",
+        "img": "https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?w=996&t=st=1680245750~exp=1680246350~hmac=7453c39d78d4207b66ad5aa05068b78d0af191d1444752f8fee03fd15ce8ef45",
+        "authorImg":"https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+        "date":"Mar 14 (4 Days ago)",
+        "readTime":12
+      },
+      {
+        "id": 4,
+        "name": "Abul Kalam",
+        "title": "How to get your first job as a self-taught programmer",
+        "img": "https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?w=996&t=st=1680245676~exp=1680246276~hmac=e96ffb3477b3b3c202e081e448d26d1be6d1493b737f08ffeb5feb2fe53776f8",
+        "authorImg":"https://img.freepik.com/free-photo/confident-attractive-caucasian-guy-beige-pullon-smiling-broadly-while-standing-against-gray_176420-44508.jpg?w=996&t=st=1680246091~exp=1680246691~hmac=2530c8dca323539b0cc59ca4e650280b381348bbbe53a13e89734a3ccb1359e4",
+        "date":"Mar 14 (4 Days ago)",
+        "readTime":15
+      }
+]
