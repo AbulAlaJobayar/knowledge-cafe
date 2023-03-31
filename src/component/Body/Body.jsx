@@ -3,7 +3,7 @@ import Main from '../Main/Main';
 import Aside from '../Aside/Aside';
 
 
-const Body = ({handleAddToBookMark,redTime}) => {
+const Body = ({ handleAddToBookMark, redTime }) => {
     const [datas, setDatas] = useState([]);
     useEffect(() => {
         fetch('../../../public/feckData/feckData.json')
@@ -15,7 +15,7 @@ const Body = ({handleAddToBookMark,redTime}) => {
         <div className='flex-none md:flex justify-around m-10'>
             <div>
                 {
-                    datas.map(data => <Main data={data} key={data.id} handleAddToBookMark={handleAddToBookMark} ></Main>)
+                    datas.map(data => <Main data={data} key={data.id} handleAddToBookMark={handleAddToBookMark}></Main>)
                 }
             </div>
             <div>
