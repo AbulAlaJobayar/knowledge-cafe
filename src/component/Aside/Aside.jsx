@@ -2,8 +2,8 @@ import React from 'react';
 
 const Aside = () => {
     return (
-        <div>
-           <h1>gello</h1> 
+        <div className='bg-gray-100'>
+           <h1 className='bg-re'>gello</h1> 
         </div>
     );
 };

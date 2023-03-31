@@ -4,9 +4,9 @@ import "./Header"
 const Header = () => {
     return (
         <>
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-gray-200 px-16 sticky top-0 ">
                 <div className="flex-1">
-                    <a className="btn btn-ghost normal-case text-xl">Codeamy</a>
+                    <a className="btn btn-ghost normal-case text-3xl font-bold">Codeamy</a>
                 </div>
                 <div className="flex-none">
                     <ul className="menu menu-horizontal px-1">

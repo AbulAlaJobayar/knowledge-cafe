@@ -4,20 +4,23 @@ import Aside from '../Aside/Aside';
 
 
 const Body = () => {
-    const[datas,setDatas]=useState([]);
-    useEffect(()=>{
+    const [datas, setDatas] = useState([]);
+    useEffect(() => {
         fetch('../../../public/feckData/feckData.json')
-        .then(res=>res.json())
-        .then(data=>setDatas((data)))
-    },[])
+            .then(res => res.json())
+            .then(data => setDatas((data)))
+    }, [])
 
     return (
-        <div>
-            {
-                datas.map(data=><Main data={data} key={data.id}></Main>)
-            }
-            
-           <Aside></Aside>
+        <div className='flex-none md:flex justify-around m-10'>
+            <div>
+                {
+                    datas.map(data => <Main data={data} key={data.id}></Main>)
+                }
+            </div>
+            <div>
+                <Aside></Aside>
+            </div>
         </div>
     );
 };
