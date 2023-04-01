@@ -67,8 +67,41 @@ const Footer = () => {
                     Let's improve the Greet component by using name prop in the document title:name prop is mentioned in the dependencies argument of useEffect(..., [name]). useEffect() hook runs the side-effect after initial rendering, and on later renderings only if the name value changes.
                 </p>
                 <p>
-                    <h1></h1>
+                    <h1 className='text-xl'>4. Side-effect cleanup</h1>
+                    Some side-effects need cleanup: close a socket, clear timers.
+
+                    If the callback of useEffect(callback, deps) returns a function, then useEffect() considers that function as an effect cleanup:Cleanup works the following way:
+
+                    A. After initial rendering, useEffect() invokes the callback with the side-effect. cleanup function is not invoked.
+
+                    B. On later renderings, before invoking the next side-effect callback, useEffect() invokes the cleanup function from the previous side-effect execution (to clean up everything after the previous side-effect), then invokes the current side-effect.
+
+                    C. Finally, after unmounting the component, useEffect() invokes the cleanup function from the latest side-effect.
                 </p>
+            </div>
+            <div className='mt-10'>
+                <h1 className='text-3xl font-bold mb-4'>No:4 How does React JS work?</h1>
+                <p>
+                    The upside of using React JS is that you can infuse HTML code with JavaScript. But what are the benefits of jsx (JavaScript XML)?
+
+                    When building client-side apps, a team of Facebook developers came to the understanding that the DOM (Document Object Model) is slow.
+                    DOM is an application programming interface (API) for HTML and XML documents which shows the logical structure of documents and how a document is manipulated and accessed.
+                    To make it faster, React implements a virtual DOM which is a DOM tree representation in JavaScript.
+                    When there is a need to read and write to the DOM, it uses its virtual representation of it.
+                    Following this, the virtual DOM will attempt to locate the most effective manner to update the DOM of the browser.
+
+
+                    You can create a representation of a DOM node by declaring the ‘element’ function in React. Unlike browser DOM elements, React elements are plain objects and can be created affordably.
+
+
+
+                    React DOM looks after updating the DOM to blend with the React elements. This is because JavaScript is super prompt and keeping a DOM tree in it to speed up its manipulation is rewarding.
+
+
+
+                    While React was created to be used in the browser, its design makes it advantageous to use in the server with Node. JS. But how does Node js work with React? The best platform for hosting and operating web servers for React-based apps is known to be Node JS. The main explanation for this is that Node uses an NPM to install all new updates and packages.
+                </p>
+
             </div>
 
         </div>
