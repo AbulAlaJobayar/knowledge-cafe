@@ -8,7 +8,7 @@ const Body = ({ handleAddToBookMark, redTime }) => {
     const [count, setCount] = useState(0)
     const [datas, setDatas] = useState([]);
     useEffect(() => {
-        fetch('../../../public/feckData.json')
+        fetch('../../../public/fetchData/data.json')
             .then(res => res.json())
             .then(data => setDatas((data)))
     }, [])
