@@ -25,7 +25,7 @@ const Footer = () => {
             <div className='mt-10'>
                 <h1 className='text-3xl font-bold mb-4'>NO:3 What does useEffect do other than load data?</h1>
                 <p>
-                    <h1 className='text-xl'>1. Side-effects</h1>
+                    <span className='text-xl'>1. Side-effects</span>
                     A functional React component uses props and/or state to calculate the output. If the component makes calculations that don't target the output value, then these calculations are named side-effects.
 
                     Examples of side-effects are fetch requests, manipulating DOM directly, using timer functions like setTimeout(), and more.
@@ -36,9 +36,9 @@ const Footer = () => {
                 </p>
                 <br></br>
                 <p>
-                    <h1 className='text-xl'>
+                    <span className='text-xl'>
                         2. useEffect() arguments
-                    </h1><br></br>
+                    </span><br></br>
                     callback is a function that contains the side-effect logic. callback is executed right after the DOM update.
                     dependencies is an optional array of dependencies. useEffect() executes callback only if the dependencies have changed between renderings.
                     Put your side-effect logic into the callback function, then use the dependencies argument to control when you want the side-effect to run. That's the sole purpose of useEffect().
@@ -53,7 +53,7 @@ const Footer = () => {
                     B. An empty array []: the side-effect runs once after the initial rendering.<br />
                     C. Has props or state values [prop1, prop2, ..., state1, state2]: the side-effect runs once after initial rendering and then only when any dependency value changes.<br /></p>
                 <p>
-                    <h1 className='text-xl'>3. Component lifecycle</h1>
+                    <span className='text-xl'>3. Component lifecycle</span>
                     The dependencies argument of the useEffect() lets you catch certain component lifecycle events: when the component has been mounted or a specific prop or state value has changed.
                     <span className='text-lg'> 3.1 Component did mount</span>
                     Use an empty dependencies array to invoke a side-effect once after component mounting:useEffect(..., []) was supplied with an empty array as the dependencies argument. When configured in such a way, the useEffect() executes the callback just once, after initial rendering (mounting).
@@ -67,7 +67,7 @@ const Footer = () => {
                     Let's improve the Greet component by using name prop in the document title:name prop is mentioned in the dependencies argument of useEffect(..., [name]). useEffect() hook runs the side-effect after initial rendering, and on later renderings only if the name value changes.
                 </p>
                 <p>
-                    <h1 className='text-xl'>4. Side-effect cleanup</h1>
+                    <span className='text-xl'>4. Side-effect cleanup</span>
                     Some side-effects need cleanup: close a socket, clear timers.
 
                     If the callback of useEffect(callback, deps) returns a function, then useEffect() considers that function as an effect cleanup:Cleanup works the following way:
